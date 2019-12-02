@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'toolsZuJian_Example' do
+  pod 'toolsZuJian', :path => '../'
+
+  target 'toolsZuJian_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
