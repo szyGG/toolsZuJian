@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04C18EBA93B4182A2A02E92D /* Pods_toolsZuJian_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74F957AB74B504038D9A123 /* Pods_toolsZuJian_Tests.framework */; };
+		5015E5352394B58F006A1363 /* SZYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015E5342394B58F006A1363 /* SZYRouter.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,8 +40,10 @@
 /* Begin PBXFileReference section */
 		00274FF07BE1A61B6ED10008 /* Pods-toolsZuJian_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toolsZuJian_Tests.debug.xcconfig"; path = "Target Support Files/Pods-toolsZuJian_Tests/Pods-toolsZuJian_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		01529C2A673435A34B382B66 /* Pods_toolsZuJian_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toolsZuJian_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2609E8CF020CE319FB131B4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2609E8CF020CE319FB131B4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		37F102E2B3107A6564071A04 /* Pods-toolsZuJian_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toolsZuJian_Tests.release.xcconfig"; path = "Target Support Files/Pods-toolsZuJian_Tests/Pods-toolsZuJian_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5015E5332394B58F006A1363 /* SZYRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZYRouter.h; sourceTree = "<group>"; };
+		5015E5342394B58F006A1363 /* SZYRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZYRouter.m; sourceTree = "<group>"; };
 		56A643E412AA0206D71F066E /* Pods-toolsZuJian_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toolsZuJian_Example.debug.xcconfig"; path = "Target Support Files/Pods-toolsZuJian_Example/Pods-toolsZuJian_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* toolsZuJian_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toolsZuJian_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +67,8 @@
 		6B73EB1D48BE72A259C9B6D2 /* Pods-toolsZuJian_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toolsZuJian_Example.release.xcconfig"; path = "Target Support Files/Pods-toolsZuJian_Example/Pods-toolsZuJian_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A5FBB2A3CC695C3E79EC7C6 /* toolsZuJian.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = toolsZuJian.podspec; path = ../toolsZuJian.podspec; sourceTree = "<group>"; };
-		D9ACEE60DFE465001C14AC7C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8A5FBB2A3CC695C3E79EC7C6 /* toolsZuJian.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = toolsZuJian.podspec; path = ../toolsZuJian.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D9ACEE60DFE465001C14AC7C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E74F957AB74B504038D9A123 /* Pods_toolsZuJian_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toolsZuJian_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,13 +106,22 @@
 				00274FF07BE1A61B6ED10008 /* Pods-toolsZuJian_Tests.debug.xcconfig */,
 				37F102E2B3107A6564071A04 /* Pods-toolsZuJian_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5015E5322394B439006A1363 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				5015E5332394B58F006A1363 /* SZYRouter.h */,
+				5015E5342394B58F006A1363 /* SZYRouter.m */,
+			);
+			path = class;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				5015E5322394B439006A1363 /* class */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for toolsZuJian */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -258,6 +270,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,11 +359,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-toolsZuJian_Example/Pods-toolsZuJian_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/toolsZuJian/toolsZuJian.framework",
+				"${BUILT_PRODUCTS_DIR}/MGJRouter/MGJRouter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/toolsZuJian.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGJRouter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SZYAppDelegate.m in Sources */,
+				5015E5352394B58F006A1363 /* SZYRouter.m in Sources */,
 				6003F5A7195388D20070C39A /* SZYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -1,0 +1,6 @@
+framework module toolsZuJian {
+  umbrella header "toolsZuJian-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'toolsZuJian'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of toolsZuJian.'
+  s.summary          = '基础组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,12 +25,12 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'szyGG' => '1538243267@qq.com' }
-  s.source           = { :git => 'https://github.com/szyGG/toolsZuJian.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/szyGG/toolsZuJian.git', :tag => '0.1.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'toolsZuJian/Classes/**/*'
+  s.source_files = 'Example/class/**/*'
   
   # s.resource_bundles = {
   #   'toolsZuJian' => ['toolsZuJian/Assets/*.png']
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  #路由框架
+  s.dependency "MGJRouter", "~> 0.9.3"
 end

@@ -1,0 +1,27 @@
+{
+  "name": "toolsZuJian",
+  "version": "0.1.0",
+  "summary": "基础组件",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/szyGG/toolsZuJian",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "szyGG": "1538243267@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/szyGG/toolsZuJian.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Example/class/**/*",
+  "dependencies": {
+    "MGJRouter": [
+      "~> 0.9.3"
+    ]
+  }
+}
